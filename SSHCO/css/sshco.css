@@ -13,10 +13,22 @@ html {
 }
 .superhead{
     font-size: 70px;
-    text-transform: uppercase;
+    text-transform: ;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin:auto;
-    text-align: center;
+    text-align: right;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px 
+    width: 480px; 
+}
+
+.superhead-left{
+    float: left;
+}
+
+.superhead-right {
+    float: right;
 }
 @media(max-width:766px) {
     .superhead{
