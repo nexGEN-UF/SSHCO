@@ -417,7 +417,7 @@ img.homepageBig{
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/clinic-2-min.jpg) center;
+     background: url(../img/header7.jpg)center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 4%;
@@ -431,7 +431,7 @@ img.homepageBig{
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/credit_AP.jpg) center;
+     background: url(../img/Board-Header.jpg)center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 4%;
@@ -445,10 +445,10 @@ img.homepageBig{
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/founders.jpg) center;
+     background: url(../img/about%20founders%20header.jpg)center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 4%;
+    background-position-y: 4%;s
     -moz-background-size: contain;
     -o-background-size: contain;
 }
@@ -458,7 +458,7 @@ img.homepageBig{
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
-    background: url(../img/header7.jpg)center;
+    background: url(../img/header6.jpg)center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
