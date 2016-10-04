@@ -14,15 +14,15 @@ html {
 
 .superhead-left{
     float: left;    
-    font-size: 50px;
+    font-size: 48px;
     text-transform: ;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: right;
-    width: 650px;
-    padding: 30px;
+    width: 500px;
+    padding: 40px;
     border-right: solid 5px;
-    height: 225px;    
-    margin-top: 18px
+    height: 280px;    
+    margin-top: 80px;
 }
 
 .superhead-right {
@@ -32,7 +32,9 @@ html {
     text-transform: ;   
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left;
-    width: 700px;
+    width: 590px;
+    margin-top: px;
+    padding: 40px
 }
 
 @media(max-width:766px) {
