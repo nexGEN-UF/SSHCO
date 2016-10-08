@@ -15,10 +15,10 @@ html {
 .superhead-left{
     float: left;    
     font-size: 48px;
-    text-transform: ;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: right;
-    width: 500px;
+    width: auto;
+    max-width: 500px;
     padding: 40px;
     border-right: solid 5px;
     height: 280px;    
@@ -26,15 +26,15 @@ html {
 }
 
 .superhead-right {
-    float: right;
+    float: left;
     margin: 5px;
     font-size: 23px;
-    text-transform: ;   
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left;
-    width: 590px;
-    margin-top: px;
-    padding: 40px
+    width: auto;
+    max-width: 590px;
+    margin-top: 20px;
+    padding: 15px;
 }
 
 @media(max-width:766px) {
@@ -455,6 +455,11 @@ img.homepageBig{
     -o-background-size: contain;
 }
 
+#about-jacob img{
+    height: 250px;
+    width: 250px;
+}
+
 .history-section {
     width: 100%;
     padding: 50px 0;
@@ -491,8 +496,6 @@ img.homepageBig{
     -o-background-size: cover;
 }
 
-
-
 .contact-section {
     width: 100%;
     padding: 50px 0;
@@ -516,7 +519,6 @@ img.homepageBig{
     background-size: cover;
     -o-background-size: cover;
 }
-
 
 
 #map {
