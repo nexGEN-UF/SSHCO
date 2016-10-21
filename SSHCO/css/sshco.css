@@ -14,35 +14,73 @@ html {
 
 .superhead-left{
     float: left;    
-    font-size: 48px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: right;
-    width: auto;
+    width: 40vw;
     max-width: 500px;
-    padding: 40px;
-    border-right: solid 5px;
     height: 280px;    
     margin-top: 80px;
 }
 
-.superhead-right {
-    float: left;
-    margin: 5px;
-    font-size: 23px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align: left;
-    width: auto;
-    max-width: 590px;
-    margin-top: 20px;
-    padding: 15px;
+.superhead-left p {
+    font-size: 43px;
 }
 
-@media(max-width:766px) {
-    .superhead{
-        font-size: 45px;
+.superhead-right {
+    float: left;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    align-content: center;
+    width: 50vw;
+    max-width:650px;
+    margin-top: 70px;
+    height: 375px; 
+    display: block;
+    
+}
+
+.superhead-right p {
+    font-size: 20px;
+}
+
+.division {
+    width: 5px;
+    height: 300px;
+    float: left;
+    border-right: solid white 5px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+    
+    .superhead-left, .superhead-right {
+        margin: 0 auto;
+        text-align: center;
+        max-width: none;
+        width: 100%;
+    }
+    
+    .superhead-left {
+        height: auto;
+    }
+    
+    .superhead-right p {
+        font-size: 18px;
+    }
+
+    .division {
+        width: 50%;
+        height:5px;
+        margin-left: 25%;
+        border-bottom: solid white 5px;
+    }
+    
+    .container {
+        border-color: none;
     }
 }
-}
+
 h1,
 h2,
 h3,
@@ -106,9 +144,7 @@ h5{
     }
 
 }
-@media(max-width:991px){
 
-}
 a {
     color: #08742a;
     -webkit-transition: all .2s ease-in-out;
@@ -501,7 +537,7 @@ img.homepageBig{
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
-    background: url(../img/contact.png)center;
+    background: url(../img/contact.jpg)center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -782,7 +818,7 @@ img.bigLogo{
         display: none!important;
     }
     img.bigLogo{
-        max-width:300px!important;
+        max-width:240px!important;
     }
 }
 .smallTop{
@@ -812,8 +848,13 @@ hr.social {
     width: 150px;
 }
 
-img.social-icon{
+img.social-icon {
     display: inline;
     margin: 10px;
     max-width: 45px;
 }
+
+.profile-desc, .profile-hdr {
+    text-align: center;
+}
+
