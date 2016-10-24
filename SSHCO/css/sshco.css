@@ -52,6 +52,8 @@ html {
     border-radius: 5px;
 }
 
+
+
 @media screen and (max-width:768px) {
     
     .superhead-left, .superhead-right {
@@ -204,7 +206,7 @@ a.two:focus {
     outline: 0;
 }
 
-.navbar-custom a {
+.navbar-custom a, .navbar-custom div {
     color: #fff;
 }
 
@@ -213,7 +215,7 @@ a.two:focus {
     background-color: rgba(255,255,255,.0);
 }
 
-.navbar-custom .nav li a {
+.navbar-custom .nav li a, .navbar-custom .nav li div {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -221,6 +223,8 @@ a.two:focus {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
+.navbar-custom .nav li div:hover,
+.navbar-custom .nav li div:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
     background-color: rgba(255,255,255,.0);
