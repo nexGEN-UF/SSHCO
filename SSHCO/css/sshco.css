@@ -12,6 +12,31 @@ html {
     height: 100%;
 }
 
+.color-change{
+    color: black;
+}
+
+.container-style {
+    height:auto; 
+    min-height:435px; 
+    width: auto; 
+    max-width: 1170px; 
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-donate-style, container-about-clinic-style {
+    height:auto; 
+    min-height:435px; 
+    width: auto; 
+    max-width: 1170px;
+    text-align: center;
+}
+{
+    width: auto;
+    max-width: 500px;
+}
+
 .superhead-left{
     float: left;    
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -36,12 +61,12 @@ html {
     margin-top: 70px;
     height: 375px; 
     display: block;
-    
 }
 
 .superhead-right p {
     font-size: 20px;
 }
+
 
 .division {
     width: 5px;
@@ -52,7 +77,62 @@ html {
     border-radius: 5px;
 }
 
+#history-text {
+    margin-top: 25px;
+}
 
+#join-text {
+    margin-top: 115px;
+}
+
+#contact-text {
+    font-size: 27px;
+    margin-top: 50px;
+}
+
+#money-text {
+    font-size: 38px;
+}
+
+@media screen and (max-width:879px){
+    .donate-section .superhead-left, .donate-section .superhead-right {
+        margin: 0 auto;
+        text-align: center;
+        max-width: none;
+        width: 100%;
+    }
+    
+    .donate-section .superhead-left{
+        height: auto;
+        border-top: 5px solid white;
+    }
+    
+    .donate-section .superhead-right{
+        margin-top: 70px;
+    }
+    
+    .donate-section .superhead-right p{
+        font-size: 20px;
+    }
+    
+    .donate-section .division {
+        width: 50%;
+        height:5px;
+        margin-left: 25%;
+        border-bottom: solid white 5px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    
+    container-donate-style, container-about-clinic-style {
+        border: none;
+        background-color: rgba(0,0,0,0);
+    }
+    
+    #money-text{
+        font-size: 24px;
+    }
+}
 
 @media screen and (max-width:768px) {
     
@@ -65,6 +145,7 @@ html {
     
     .superhead-left {
         height: auto;
+        border-top: 5px solid white;
     }
     
     .superhead-right p {
@@ -76,10 +157,26 @@ html {
         height:5px;
         margin-left: 25%;
         border-bottom: solid white 5px;
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
     
-    .container {
-        border-color: none;
+    
+    #join-text {
+        margin-top: 0px;
+    }
+
+    .container-style {
+        border: none;
+        background-color: rgba(0,0,0,0);
+    }
+    
+    .color-change{
+        color: #FFF;
+    }
+    
+    .dropdown-menu li a {
+        color: white;
     }
 }
 
@@ -343,24 +440,6 @@ img.homepageBig{
     -moz-animation-timing-function: linear;
 }
 
-/*@media(max-width:767px) {
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-}
-*/
-
 @-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
@@ -441,7 +520,6 @@ img.homepageBig{
 
 .about-section {
     width: 100%;
-    /*height: 100%;*/
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
@@ -455,7 +533,6 @@ img.homepageBig{
 
 .about-clinic-section {
     width: 100%;
-    /*height: 100%;*/
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
@@ -469,7 +546,6 @@ img.homepageBig{
 
 .about-board-section {
     width: 100%;
-    /*height: 100%;*/
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
@@ -483,14 +559,13 @@ img.homepageBig{
 
 .about-founders-section {
     width: 100%;
-    /*height: 100%;*/
     padding: 50px 0;
     color: #fff;
     background-color: #17232f;
      background: url(../img/about%20founders%20header.jpg)center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 4%;s
+    background-position-y: 4%;
     -moz-background-size: contain;
     -o-background-size: contain;
 }
