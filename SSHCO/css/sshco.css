@@ -26,8 +26,7 @@ html {
 }
 
 .container-donate-style, container-about-clinic-style {
-    height:auto; 
-    min-height:435px; 
+    height:auto;  
     width: auto; 
     max-width: 1170px;
     text-align: center;
@@ -43,7 +42,7 @@ html {
     text-align: right;
     width: 40vw;
     max-width: 500px;
-    height: 280px;    
+    height: auto;    
     margin-top: 80px;
 }
 
@@ -59,7 +58,7 @@ html {
     width: 50vw;
     max-width:650px;
     margin-top: 70px;
-    height: 375px; 
+    height: 
     display: block;
 }
 
@@ -78,7 +77,7 @@ html {
 }
 
 #history-text {
-    margin-top: 25px;
+    margin-top: 90px;
 }
 
 #join-text {
@@ -104,7 +103,7 @@ html {
     
     .donate-section .superhead-left{
         height: auto;
-        border-top: 5px solid white;
+        border-top: none;
     }
     
     .donate-section .superhead-right{
@@ -132,6 +131,7 @@ html {
     #money-text{
         font-size: 24px;
     }
+    
 }
 
 @media screen and (max-width:768px) {
@@ -141,11 +141,12 @@ html {
         text-align: center;
         max-width: none;
         width: 100%;
+        height: auto;
     }
     
     .superhead-left {
         height: auto;
-        border-top: 5px solid white;
+        border-top: none;
     }
     
     .superhead-right p {
@@ -161,8 +162,11 @@ html {
         margin-bottom: 30px;
     }
     
-    
     #join-text {
+        margin-top: 0px;
+    }
+    
+    #history-text {
         margin-top: 0px;
     }
 
@@ -177,6 +181,17 @@ html {
     
     .dropdown-menu li a {
         color: white;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    #about-jacob h2 {
+        text-align: center;
+    }
+    
+     #money-text{
+        font-size: 24px;
     }
 }
 
