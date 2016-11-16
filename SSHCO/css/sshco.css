@@ -323,7 +323,7 @@ a.two:focus {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: rgba(255,255,255,.0);
 }
 
@@ -335,8 +335,8 @@ a.two:focus {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
-.navbar-custom .nav li div:hover,
-.navbar-custom .nav li div:focus,
+.navbar-custom .nav li .page-scroll:hover,
+.navbar-custom .nav li .page-scroll:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
     background-color: rgba(255,255,255,.0);
@@ -915,6 +915,7 @@ img.bigLogo{
         max-width:240px!important;
     }
 }
+
 .smallTop{
     }
 @media(min-width:767px) {
