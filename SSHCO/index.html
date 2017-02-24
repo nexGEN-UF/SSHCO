@@ -27,13 +27,20 @@
                         $("#hideshowE").click(function(){
                                 $("#moreEvents").toggle(500);
                             });
-                        });
-                     
-                     $(document).ready(function(){
                         $("#hideshowW").click(function(){
                                 $("#moreHistory").toggle(500);
                             });
+                        $("#about-menu").click(function(){
+                            if (!$('.dropdown-menu').is(":visible")){
+                                $(".dropdown").addClass("open");
+                                $(".dropdown-menu").show();
+                            } else if ($('.dropdown-menu').is(":visible")){
+                                $(".dropdown").removeClass("open");
+                                $(".dropdown-menu").hide();
+                            }                                
+                            });
                         });
+
     </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,12 +80,12 @@
                     </li>
                     <li>
                         <div class="dropdown">
-                            <div class="page-scroll dropdown-toggle" data-toggle="dropdown" style="padding: 10px 0px; padding-left: 16px; margin-top:5px; padding-right: 10px; margin-right: 5px;">About<span class="caret"></span></div>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item color-change"><a  href="about.html">The Foundation</a></li>
-                                <li class="dropdown-item color-change"><a  href="about-clinic.html">The Clinic</a></li>
-                                <li class="dropdown-item color-change"><a  href="about-founders.html">The Founders</a></li>
-                                <li class="dropdown-item color-change"><a  href="about-board.html">The Board</a></li>
+                            <div href="#" id="about-menu" class="page-scroll dropdown-toggle" style="padding: 10px 0px; padding-left: 16px; margin-top:5px; padding-right: 10px; margin-right: 5px;">About<span class="caret"></span></div>
+                            <ul class="dropdown-menu" style="display:none">
+                                <li class="dropdown-item color-change"><a href="about.html">The Foundation</a></li>
+                                <li class="dropdown-item color-change"><a href="about-clinic.html">The Clinic</a></li>
+                                <li class="dropdown-item color-change"><a href="about-founders.html">The Founders</a></li>
+                                <li class="dropdown-item color-change"><a href="about-board.html">The Board</a></li>
                             </ul>
                         </div>
                     </li>
