@@ -32,12 +32,21 @@
                                 $("#moreHistory").toggle(500);
                             });
                         $("#about-menu").click(function(){
-                            if (!$('.dropdown-menu').is(":visible")){
-                                $(".dropdown").addClass("open");
-                                $(".dropdown-menu").show();
-                            } else if ($('.dropdown-menu').is(":visible")){
-                                $(".dropdown").removeClass("open");
-                                $(".dropdown-menu").hide();
+                            if (!$('.dropdown-menu.about').is(":visible")){
+                                $(".dropdown.about").addClass("open");
+                                $(".dropdown-menu.about").show();
+                            } else if ($('.dropdown-menu.about').is(":visible")){
+                                $(".dropdown.about").removeClass("open");
+                                $(".dropdown-menu.about").hide();
+                            }                                
+                            });
+						$("#history-menu").click(function(){
+                            if (!$('.dropdown-menu.history').is(":visible")){
+                                $(".dropdown.history").addClass("open");
+                                $(".dropdown-menu.history").show();
+                            } else if ($('.dropdown-menu.history').is(":visible")){
+                                $(".dropdown.history").removeClass("open");
+                                $(".dropdown-menu.history").hide();
                             }                                
                             });
                         });
@@ -56,31 +65,31 @@
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" style="color:#fff;">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="index.html">
-                        <img src="img/navLogo.png" style="max-width:125px; margin-top:-5px" alt="small SSHCO logo">
-                    </a>
-                </div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background-color: #08742a;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" style="color:#fff;">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img src="img/navLogo.png" style="max-width:125px; margin-top:-5px" alt="SSHCO small logo">
+                </a>
+            </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="index.html">Home</a>
-                        </li>
-                        <li>
-                        <div class="dropdown">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <div class="dropdown about">
                             <div href="#" id="about-menu" class="page-scroll dropdown-toggle" style="padding: 10px 0px; padding-left: 16px; margin-top:5px; padding-right: 10px; margin-right: 5px;">About<span class="caret"></span></div>
-                            <ul class="dropdown-menu" style="display:none">
+                            <ul class="dropdown-menu about" style="display:none">
                                 <li class="dropdown-item color-change"><a href="about.html">The Foundation</a></li>
                                 <li class="dropdown-item color-change"><a href="about-clinic.html">The Clinic</a></li>
                                 <li class="dropdown-item color-change"><a href="about-founders.html">The Founders</a></li>
@@ -88,30 +97,34 @@
                             </ul>
                         </div>
                     </li>
-                        <li>
-                            <a class="page-scroll" href="history.html">History</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="join.html">Join Us</a>
-                        </li>
-                        
-                        <li >
-                            <!-- style="outline: 2px solid #fff;" -->
-                            <a class="page-scroll" href="donate.html">DONATE</a>
-                        </li>
-                        <li >
-                        <!-- style="outline: 2px solid #fff;" -->
+                     <li>
+                        <div class="dropdown history">
+                            <div href="#" id="history-menu" class="page-scroll dropdown-toggle" style="padding: 10px 0px; padding-left: 16px; margin-top:5px; padding-right: 10px; margin-right: 5px;">History<span class="caret"></span></div>
+                            <ul class="dropdown-menu  history" style="display:none">
+                                <li class="dropdown-item color-change"><a href="south-sudan.html">South Sudan</a></li>
+                                <li class="dropdown-item color-change"><a href="lost-boys.html">Lost Boys</a></li>
+                                <li class="dropdown-item color-change"><a href="history-clinic.html">Clinic</a></li>                                
+                            </ul>
+                        </div>
+                    </li>              										
+                     <li>
+                        <a class="page-scroll" href="join.html">Join Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="donate.html">Donate</a>
+                    </li>
+                    <li>                        
                         <a href="/blog" target="_blank">Blog</a>
                     </li>
-                        <li>
-                            <a class="page-scroll" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+                    <li>
+                        <a class="page-scroll" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <!-- /.container -->
-        </nav>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 
 
